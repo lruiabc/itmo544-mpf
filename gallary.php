@@ -20,6 +20,10 @@ $(document).ready(function(){
 <p>click me, I will hide!</p>
 
 <?php
+if(!isset($_SESSION['user']))
+{header("Location:im.php");
+exit;
+}
 session_start();
 $email = $_POST["email"];
 echo $email;
