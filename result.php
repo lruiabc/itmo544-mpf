@@ -14,6 +14,7 @@ echo '<pre>';
 
 if(move_uploaded_file($_FILES['userfile']['tmp_name'],$uploadfile)){
 	echo "File is calid, and was successfully uploaded.\n";
+	$_session['user']='a';
 }else{
 	echo "Possible file upload attack!\n";
 }
