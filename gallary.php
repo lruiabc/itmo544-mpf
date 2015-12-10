@@ -21,7 +21,7 @@ $(document).ready(function(){
 
 <?php
 if(isset($_SESSION['user']))
-{header("Location:im.php");
+{header("Location:raw.php");
 exit;
 }
 session_start();
