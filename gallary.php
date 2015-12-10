@@ -34,6 +34,7 @@ $client = RdsClient::factory(array(
 $result = $client->describeDBInstances(array(
 
   'DBInstanceIdentifier' => 'itmo544grh-mp1',
+    'SourceDBInstanceIdentifier' => 'itmo544-rui-sdb'
 
 ));
 $endpoint = $result['DBInstances'][0]['Endpoint']['Address'];
