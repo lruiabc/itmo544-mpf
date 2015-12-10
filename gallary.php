@@ -20,7 +20,7 @@ $(document).ready(function(){
 <p>click me, I will hide!</p>
 
 <?php
-if(!isset($_SESSION['user']))
+if(isset($_SESSION['user']))
 {header("Location:im.php");
 exit;
 }
@@ -67,7 +67,7 @@ $link->close();
 
 
 ?>
-
+<h1><a href="im.php">see imagickimage</a></h1>
 </body>
 
 </html>
